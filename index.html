@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wanaemi Watson — Cloud & DevOps Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body data-theme="light">
+    <canvas id="bg"></canvas>
+
+    <div class="container">
+        <header class="header">
+            <div class="hero">
+                <img class="avatar" src="https://avatars.dicebear.com/api/identicon/Wanaemi.svg" alt="Wanaemi avatar">
+                <div class="hero-text">
+                    <h1 class="name">Wanaemi Watson</h1>
+                    <p class="role">Senior Site Reliability & Cloud Infrastructure Engineer</p>
+                    <p class="tagline">I help companies ship faster, stay up to date, and spend less — cloud, DevOps,
+                        SRE, and citizen development.</p>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+                <input id="avatarInput" type="file" accept="image/*" class="hidden" />
+                <button id="uploadPhotoBtn" class="icon-btn" title="Upload profile photo">📷</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="intro card">
+                <h2>About</h2>
+                <p>
+                    With over a decade of experience in internetworking, cloud solutions architecture, DevOps, software
+                    engineering, and digitalisation, I design and operate secure, scalable cloud systems across Azure,
+                    AWS and other providers. I focus on infrastructure as code, SRE practices, CI/CD automation,
+                    microservices and empowering citizen developers.
+                </p>
+                <div class="contact-row">
+                    <button class="contact-btn" data-type="whatsapp">WhatsApp</button>
+                    <button class="contact-btn" data-type="call">Call</button>
+                    <button class="contact-btn" data-type="email">Email</button>
+                    <button class="contact-btn" data-type="linkedin">LinkedIn</button>
+                    <button class="contact-btn" data-type="github">GitHub</button>
+                </div>
+            </section>
+
+            <section class="skills card">
+                <h2>Top Skills</h2>
+                <ul class="skill-list">
+                    <li>Software Development</li>
+                    <li>REST APIs</li>
+                    <li>DevOps / SRE</li>
+                    <li>Low-Code Development</li>
+                    <li>Cloud Computing (Azure, AWS)</li>
+                </ul>
+            </section>
+
+            <section class="projects card">
+                <h2>Selected Highlights</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1"
+                            alt="Hybrid cloud">
+                        <h3>Hybrid cloud architecture</h3>
+                        <p>Architected hybrid cloud and rightsizing strategies, cutting infrastructure spend by 50%+</p>
+                    </article>
+                    <article class="project-card">
+                        <img src="https://images.unsplash.com/photo-1581090700227-1c1b1b8f8bde?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2"
+                            alt="Terraform">
+                        <h3>Terraform IaC</h3>
+                        <p>Terraform templates that reduced provisioning time by 70%</p>
+                    </article>
+                    <article class="project-card">
+                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3"
+                            alt="Kubernetes">
+                        <h3>Kubernetes reliability</h3>
+                        <p>Maintained 99.9% uptime on Kubernetes-based SaaS platforms</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="certs card">
+                <h2>Relevant Certifications <button id="badgeUploadBtn" class="icon-btn"
+                        title="Upload badge images">🏷️</button>
+                    <input id="badgeInput" type="file" accept="image/*" multiple class="hidden" />
+                </h2>
+                <ul class="cert-list" id="certList">
+                    <li data-key="aws"><a
+                            href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+                            target="_blank">AWS Certified Solutions Architect – Associate</a> <span
+                            class="code">SAA-C03</span></li>
+                    <li data-key="azure"><a
+                            href="https://learn.microsoft.com/en-us/certifications/azure-solutions-architect/"
+                            target="_blank">Microsoft Certified: Azure Solutions Architect Expert</a> <span
+                            class="code">AZ-305</span></li>
+                    <li data-key="cka"><a href="https://www.cncf.io/certification/cka/" target="_blank">Certified
+                            Kubernetes Administrator (CKA)</a> <span class="code">CKA</span></li>
+                    <li data-key="azdevops"><a href="https://learn.microsoft.com/en-us/certifications/devops-engineer/"
+                            target="_blank">Microsoft Certified: DevOps Engineer Expert</a> <span
+                            class="code">AZ-400</span></li>
+                    <li data-key="ccna"><a
+                            href="https://www.cisco.com/c/en/us/training-events/certifications/certifications-profiles/associate/ccna.html"
+                            target="_blank">Cisco Certified Network Associate (CCNA)</a> <span
+                            class="code">200-301</span></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <small>© 2026 Wanaemi Watson — Built with interactive canvas & vanilla JS</small>
+        </footer>
+    </div>
+
+    <div id="contactModal" class="modal hidden" role="dialog" aria-modal="true">
+        <div class="modal-card">
+            <button id="modalClose" class="close">✕</button>
+            <div id="contactContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
