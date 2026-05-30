@@ -28,8 +28,3 @@ Files added:
 - [script.js](script.js) — interactive behaviour (background, proximity lighting, modal)
 - [README.md](README.md) — this file
 
-Next steps I can help with:
-
-- Add projects pages and code samples
-- Create a deploy workflow (GitHub Actions) to publish automatically
-- Replace placeholder certifications with verified credentials and badges
